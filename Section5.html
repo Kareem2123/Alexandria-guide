@@ -1,0 +1,174 @@
+
+<html>
+<head>
+
+    <title>Alexandria guide</title>
+    <link rel="icon" href="images/icon.jpg">
+<style>
+
+
+.dOne{
+text-align: center;
+height: 300px;
+background: url("images/back3.webp");
+background-repeat: no-repeat;
+background-size:100% 100%;
+color: rgb(255, 255, 255);
+padding-top: 5%;
+font-size: 20px;
+font-weight: bold;
+border-radius: 10px;
+} 
+
+a:link{
+    text-decoration: underline;
+    margin: 20px;
+	color: rgb(255, 255, 255);
+	
+}
+a:visited{
+    color: rgb(255, 255, 255);
+
+}
+ a:hover{ 
+    background-color:rgb(0, 4, 255);
+    padding: 20px;
+}
+
+.dTwo{
+    width: 100%;
+    height: 10%;
+    background-color:rgba(0, 0, 0, 0.712);
+    font-size: 30px;
+    border-radius: 5px;
+}
+nav{
+    padding: 15px; 
+    
+}
+.dThree{
+
+    padding-top: 50;
+    width: 33%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    float: left;
+    text-align: center;
+    border-radius: 5px;
+    background-color: bisque;
+    
+}
+
+img{
+
+    opacity: 0.5;
+    border-radius: 20px;
+    object-fit: scale-down;
+}
+ img:hover{
+
+    opacity: 1;
+    box-shadow: 0 0 10px 10px rgba(93, 112, 218, 0.5);
+	/* h-offset v-offset blur size color*/
+    object-fit: fill;
+    
+   
+ }
+ #date-box {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: 9999;
+}
+
+/*.drop{
+display: none;
+position: absolute  ;
+background-color: cornsilk;
+width: 100px;
+height: fit-content;
+box-shadow: cyan;
+color: blue;
+}
+.dTwo:hover .drop{
+    display: block;
+}*/
+
+</style>
+</head>
+
+<body style="margin:0;">
+
+<div class="dOne">
+     <div id="date-box"></div>
+<h1 style="font-size: 60px;color: rgb(255, 255, 255);">Welcome to Alexandria</h1> <br>
+<hr width="70%"> <br>
+<span style="font-size: 38px; padding: 5px;color: rgb(255, 255, 255);">"This website will help you if it's your first time visiting Alexandria"</span>
+</div>
+<div class="dTwo" style="background-color: rgb(0, 0, 0);">
+<nav>
+    <a href="Section5.html"> Home </a> 
+    <a href="proj.html">Food</a>
+    <a href="index.html">Tourist attractions</a>
+    <a href="hotels.html"> Hotels</a>
+    <a href="sction 2.html">About Alexandria</a>
+</nav>
+
+<!--<div class="drop">
+<p>Hello!</p>
+</div>-->
+</div>
+
+
+<div class="dThree">
+    <video width="500" height="500" controls> 
+    <source src="videos/Alexandria , Egypt - by drone [4K].mp4" type="">
+    
+     </video>
+     <p style="font-size: 40px;">Enjoy the most magnificent views captured from above the skies of Alexandria, the capital of art, breathtaking landscapes, and Greek heritage.</p>
+</div>
+
+<div class="dThree">
+    <br><br>
+    <img src="images/icon.jpg" width="500px" height="400px" title="some text">
+    <p style="font-size: 40px;">Welcome to the magnificent city of Alexandria, the capital of art and natural beauty. On this website, we'll help you find everything you need in Alexandria, from entertainment and food to tourist attractions. We wish you a pleasant visit.
+</p>
+    </div>
+
+    <div class="dThree">
+            <br><br>
+    <img src="images/map.png" width="500px" height="400px" title="some text">
+    <p style="font-size: 40px;">This is a map of Alexandria that you can use to navigate around the city and enjoy the streets and the Corniche.</p>
+    <a href="https://maps.app.goo.gl/NTjQgBVE7uKTwPTH6" style="color: black; font-size: 30px;">Alexandria Map 🗺️</a>
+    </div>
+
+    <!--<div class="dThree" style="background-color: white;">
+
+        <iframe src="section1.html" height="500px" width="500px"></iframe>
+    </div>-->
+ <script>
+    function updateDateTime() {
+        const now = new Date();
+
+        const dateOptions = { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' };
+   
+        const dateStr = now.toLocaleDateString('en-US', dateOptions);
+  
+        const timeStr = now.toLocaleTimeString('en-US');
+       
+        document.getElementById('date-box').textContent = `${dateStr} — ${timeStr}`;
+    }
+
+    setInterval(updateDateTime, 1000);
+    updateDateTime();
+</script>
+	
+	
+</body>
+</html>

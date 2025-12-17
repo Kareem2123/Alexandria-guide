@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism in Alexandria</title>
+    <style>
+        
+        body { 
+           margin: 5; padding: 5;
+           background-image: url(https://tse4.mm.bing.net/th/id/OIP.hILuZNEcmYdgMzd5bkxyMAHaDe?pid=Api&P=0&h=220);
+           color: #333; direction: ltr;
+           text-align: left;
+          } 
+
+        
+        header {background-image: url(images/89e56be8275e612661deadabd91f1db6.jpg);
+text-align: center;
+height: 300px;
+
+background-repeat: no-repeat;
+background-size:100% 100%;
+color: rgb(255, 255, 255);
+padding-top: 5%;
+font-size: 20px;
+font-weight: bold;
+border-radius: 10px;
+          }
+        header h1 {
+          margin: 0 auto;
+           letter-spacing: normal;
+            max-width: fit-content;
+             width: 100%;}
+        
+        
+        .container {max-width: 1100px;
+           margin: 0 auto;
+            padding: 0 25px;
+          }
+
+       
+        .landmark-card {
+            background-color: white;
+             border-radius: 15px;
+              margin-bottom: 50px;
+               padding: 30px; 
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+             overflow: hidden;
+              text-align: left; 
+            opacity: 0; transform: translateY(20px); 
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        
+        .landmark-card.visible {opacity: 1; transform: translateY(0);}
+
+        
+        .img-container {
+            overflow: hidden; border-radius: 20px; max-width: 90%; display: block; 
+            margin: 0 auto 20px 0;
+        }
+
+        .landmark-card img {
+            width: 100%; height: auto; max-height: 500px; object-fit: cover;
+            transition: transform 0.5s ease-in-out; 
+        }
+
+        .img-container:hover img {
+          transform: scale(1.08);
+          }
+
+        
+        .landmark-card h2 {
+            color: #007bff; 
+            font-size: 30px;
+             margin-top: 0; 
+             padding-bottom: 12px; 
+            float: left;
+             position: relative;
+              cursor: pointer;
+               transition: color 0.3s ease;
+        }
+        
+        
+        .landmark-card h2 + .img-container {clear: both;}
+
+        .landmark-card h2::after {
+            content: ''; position: absolute; width: 0; height: 4px; bottom: 0; left: 50%; 
+            background-color: #ffc107; transition: width 0.4s ease-out, left 0.4s ease-out;} 
+        
+
+        .landmark-card h2:hover { 
+          color: #0056b3;}
+         
+        .landmark-card h2:hover::after {
+          width: 100%; left: 0;}
+        
+        
+        .landmark-card p {
+          font-size: 18px;
+          line-height: 1.8;
+          text-align: justify; 
+          margin: 15px 0 0 0;
+          padding-top: 15px; 
+        }
+        nav{
+    padding: 15px; 
+    
+}
+a:link{
+    text-decoration: underline;
+    margin: 20px;
+	color: rgb(255, 255, 255);
+	
+}
+a:visited{
+    color: rgb(255, 255, 255);
+
+}
+ a:hover{ 
+    background-color:rgb(209, 217, 235);
+    padding: 20px;
+}
+.dTwo{
+    width: 100%;
+    height: 10%;
+    background-color:rgba(0, 0, 0, 0.712);
+    font-size: 30px;
+    border-radius: 5px;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
+    z-index: 9999;
+}
+
+    </style>
+</head>
+<body>
+          <style>
+                    h1{color:#ffffff;
+                    }
+                    h1{text-shadow: 8px 1px 0 black;
+                    }
+                    
+                   
+          </style>
+
+    <header>
+          
+        <h1>Alexandria archaeological landmarks</h1>
+        <h2>  *We hope you enjoy exploring its historic streets, unique museums, and iconic landmarks, and that your journey through Alexandria becomes a truly unforgettable experience filled with culture, beauty, and discovery* </h2>
+    </header>
+    <div id="top"></div>
+<div class="dTwo" style="background-color: rgb(57, 66, 95);">
+
+<nav>
+    <a href="Home.html"> Home </a> 
+    <a href="proj.html">Food</a>
+    <a href="index.html">Tourist attractions</a>
+    <a href="hotels.html"> Hotels</a>
+    <a href="history.html">About Alexandria</a>
+</nav>
+
+<!--<div class="drop">
+<p>Hello!</p>
+</div>-->
+</div>
+
+    <div class="container">
+
+        <div class="landmark-card">
+            <h2>Library of Alexandria</h2>
+            <div class="img-container">
+                <img src="images/lib.jpeg" alt="Bibliotheca Alexandrina">
+            </div>
+            <p>The library of Alexandria is a spectacular architectural and cultural complex, serving as a commemoration of the ancient Library of Alexandria. Its distinctive disk-shaped design is covered in calligraphic etchings, symbolizing the vast knowledge housed within. It contains millions of books, four museums, and art galleries, making it a pivotal center for learning and cultural exchange in the region.</p>
+        </div>
+
+        <div class="landmark-card">
+            <h2>Citadel of Qaitbay</h2>
+            <div class="img-container">
+                <img src="images/qait.jpg" alt="Citadel of Qaitbay">
+            </div>
+            <p>This historic defensive fortress is situated on the exact site of the ancient Lighthouse of Alexandria (Pharos), one of the Seven Wonders of the Ancient World. Built in the 15th century by Sultan Al-Ashraf Sayf al-Din Qa'it Bay, the Citadel offers stunning panoramic views of the Mediterranean Sea and stands as a testament to the city's rich medieval history and coastal defense strategy.</p>
+        </div>
+
+        <div class="landmark-card">
+            <h2>Roman Amphitheater</h2>
+            <div class="img-container">
+                <img src="images/mt7f.jpg" alt="Roman Amphitheater">
+            </div>
+            <p>Discovered in the Kom El Dikka area, this is the only Roman amphitheater found in Egypt. Dating back to the 4th century AD, it features thirteen semi-circular marble tiers and was used for various performances, gatherings, and public events. The site provides a remarkable glimpse into the Roman period of Alexandria, surrounded by Roman baths and villas.</p>
+        </div>
+
+        <div class="landmark-card">
+            <h2>Montazah Palace</h2>
+            <div class="img-container">
+                <img src="images/montazah.jpg" alt="Montazah Palace">
+            </div>
+            <p>Montazah Palace is a historic royal complex featuring stunning palaces, notably Al-Haramlik, and vast, beautiful gardens stretching along the Mediterranean coast. Built by Khedive Abbas II in the late 19th century, the site served as the summer residence for the Egyptian Royal family. The extensive grounds offer tranquility, unique architecture, and picturesque views of the sea and the famous El Salamlik Palace tower.</p>
+        </div>
+
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const cards = document.querySelectorAll('.landmark-card');
+            const observerOptions = {root: null, rootMargin: '0px', threshold: 0.1};
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target); 
+                    }
+                });
+            }, observerOptions);
+
+            cards.forEach(card => {observer.observe(card);});
+        });
+    </script>
+    <a href="#top" class="scroll-top">⬆</a>
+
+</body>
+</html>
